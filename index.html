@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <title>Cafeteria | Alexandre Lima</title>
+</head>
+
+<body>
+    <div class="bg">
+        <img src="./img/home-img.jpg" alt="bg">
+        <div class="mascara"></div>
+    </div>
+    <header>
+        <ul>
+            <li><a class="nav" href="#inicio">Início</a></li>
+            <li><a class="nav" href="#sobre">Sobre</a></li>
+            <li><a class="nav" href="#" onclick="mostrarModal()">Endereço</a></li>
+        </ul>
+    </header>
+    <section class="caixa-principal" id="inicio" >
+        <div>
+            <img class="logo" src="./img/logo.png" alt="logo">
+            <h3>Code com o melhor café da região</h3>
+            <p>Na nossa cafeteria, você encontra o ambiente perfeito pra codar com foco — internet rápida, tomadas
+                por toda parte e, claro, aquele café artesanal que faz toda a diferença.</p>
+            <a class="botao-link">Pague o seu agora</a>
+        </div>
+    </section>
+    <section class="caixa-sobre" id="sobre">
+        <h2 class="titulo"><span>Sobre</span> nós</h2>
+        <div class="sobre-container">
+            <div class="sobre-img">
+                <img src="./img/about-img.jpg" alt="imagem">
+            </div>
+            <div class="sobre-texto">
+                <h3>O que faz nosso café especial</h3>
+                <p>Não é só o café que é especial — é o ambiente, as conexões e a comunidade que se forma aqui. Um lugar
+                    onde devs, designers, estudantes e curiosos se encontram pra trocar ideias e energias.</p>
+                <p>Cada visita é uma chance de conhecer alguém novo, compartilhar um projeto ou simplesmente trocar uma
+                    ideia boa. Acreditamos que grandes ideias nascem em boas conversas — e que uma cafeteria pode ser o
+                    ponto de partida pra muita coisa incrível.</p>
+                <a class="botao-link">Saiba mais</a>
+            </div>
+        </div>
+    </section>
+    <div class="modal">
+        <h3 class="titulo"><span>Nosso</span> endereço</h3>
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3814.7948953490504!2d-39.53482382557271!3d-17.033727783794397!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x735bb3b945bd033%3A0xdcc65782046a6225!2sVitrini%20Story!5e0!3m2!1spt-BR!2sbr!4v1744417700765!5m2!1spt-BR!2sbr"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="mascara-modal" onclick="esconderModal()"></div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
